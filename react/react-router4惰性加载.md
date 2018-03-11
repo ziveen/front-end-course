@@ -26,4 +26,4 @@ export default function asyncComponent(importComponent) {
 }
 ```
 
-- usge: `const A = async(() => import("./**/**"))`
+- usage: `const A = async(() => import("./**/**"))`
