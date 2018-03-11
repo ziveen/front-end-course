@@ -1,0 +1,29 @@
+## react-router4下实现惰性加载的方法(react高阶组件)
+
+```
+export default function asyncComponent(importComponent) {
+    class AsyncComponent extends React.Component {
+        constructor(props) {
+            super(props)
+            this.state = {
+                mod: null
+            }
+        }
+
+        async componentDidMount() {
+            const {default: component } = await imprtComponent();
+            this.setState = ({
+                mod: component
+            });
+        }
+
+        render() {
+            const Bund = this.state.mod;
+            return Bund? <Bund {...this.props}/>: null;
+        }
+    }
+    return AsyncComponent
+}
+```
+
+- usge: `const A = async(() => import("./**/**"))`
