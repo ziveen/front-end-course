@@ -105,6 +105,35 @@ function BinarySearchTree() {
         }
     };
 
+    const removeNode = function(node,key) {
+        if(node === null ) {
+            return null;
+        }
+        if(key < node.key) {
+            removeNode(node.left,key)
+        } else if(key > node.key) {
+            removeNode(node.right);
+        } else {
+            //叶子节点时
+            if(node.left ===null && node.right === null) {
+                node = null;
+                return node;
+                //只有一个子节点,子节点直接替换点节点
+            } else if(node.right === null) {
+                node = node.left;
+                return node;
+            } else {
+                //有两个子节点,二叉搜索树 左节点<根节点<右节点
+                const aux = MinNode(node.right);
+                node.key = aux.key;
+                removeNode(node.right,aux.key);
+                return node;
+            };
+        };
+    };
+
+
+    //搜索节点
     this.search = function(key) {
         searchNode(root, key);
     };
@@ -130,5 +159,10 @@ function BinarySearchTree() {
 
     this.max = function() {
         return minNode(root);
+    };
+
+    //移除节点
+    this.remove = function(key) {
+        removeNode(root,key);
     };
 }
