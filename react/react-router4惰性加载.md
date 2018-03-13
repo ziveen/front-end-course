@@ -26,5 +26,5 @@ export default function asyncComponent(importComponent) {
 }
 ```
 
-- usage: `const A = asyncComponent(() => import("./**/**"))`
+- usage: `const A = asyncComponent(() => import("./**/**"))`    
         `<Route path="/**" component={A} />`
