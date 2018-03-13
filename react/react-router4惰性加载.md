@@ -11,7 +11,7 @@ export default function asyncComponent(importComponent) {
         }
 
         async componentDidMount() {
-            const {default: component } = await imprtComponent();
+            const {default: component } = await importComponent();
             this.setState = ({
                 mod: component
             });
@@ -26,4 +26,5 @@ export default function asyncComponent(importComponent) {
 }
 ```
 
-- usage: `const A = async(() => import("./**/**"))`
+- usage: `const A = asyncComponent(() => import("./**/**"))`
+        `<Route path="/**" component={A} />`
