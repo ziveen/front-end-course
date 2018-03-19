@@ -16,5 +16,7 @@
 > 算法
  
  - [二分查找](https://github.com/Luefeng/front-end-course/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.md)
- 
+ - [冒泡排序](https://github.com/Luefeng/front-end-course/blob/master/%E7%AE%97%E6%B3%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F.md)
+ - [插入排序](https://github.com/Luefeng/front-end-course/blob/master/%E7%AE%97%E6%B3%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F.md)
+ - [插入排序](https://github.com/Luefeng/front-end-course/blob/master/%E7%AE%97%E6%B3%95/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F.md)
 ### React 部分
