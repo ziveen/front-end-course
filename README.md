@@ -2,6 +2,7 @@
 
 ### javascript部分
  - [||和&&逻辑运算符](https://github.com/Luefeng/front-end-course/blob/master/javascript/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6.md)
+ - [对象的深浅复制]（https://github.com/Luefeng/front-end-course/blob/master/javascript/objectCopy.js）
 ### 数据结构与算法
 > 数据结构
 
