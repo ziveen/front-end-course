@@ -31,7 +31,7 @@
         return actual.getTime() === target.getTime()
      } else if(Array.isArray(actual)) {
         return actual.length&&target.length&&actual.every((k,i) => {
-            return looseEqual(actual[i],target[2])
+            return looseEqual(actual[i],target[i])
         })
      } else if(var1Tag === '[object RegExp]'){
         if(actual.source === target.source && actual.flag === target.flag){
