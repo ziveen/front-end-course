@@ -27,14 +27,14 @@
 
      if(var1Tag === '[object Object]') {
          return keyCheck(actual,target)
-     } else if(val1 instanceof(Date)) {
-        return val1.getTime() === val2.getTime()
-     } else if(Array.isArray(val1)) {
-        return val1.length&&val2.length&&val1.every((k,i) => {
-            return looseEqual(val1[i],val2[2])
+     } else if(actual instanceof(Date)) {
+        return actual.getTime() === target.getTime()
+     } else if(Array.isArray(actual)) {
+        return actual.length&&target.length&&actual.every((k,i) => {
+            return looseEqual(actual[i],target[2])
         })
      } else if(var1Tag === '[object RegExp]'){
-        if(var1.source === val2.source && val1.flag === val2.flag){
+        if(actual.source === target.source && actual.flag === target.flag){
             return true
         }
      } else {
