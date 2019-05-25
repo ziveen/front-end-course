@@ -21,5 +21,5 @@
  - [插入排序](https://github.com/Luefeng/front-end-course/blob/master/%E7%AE%97%E6%B3%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F.md)
  - [插入排序](https://github.com/Luefeng/front-end-course/blob/master/%E7%AE%97%E6%B3%95/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F.md)
 ### React 部分
-
+- [react按需加载](https://github.com/Luefeng/front-end-course/blob/master/react/react-router4%E6%83%B0%E6%80%A7%E5%8A%A0%E8%BD%BD.md)
 ### Vue部分
